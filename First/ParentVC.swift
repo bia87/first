@@ -11,4 +11,9 @@ import UIKit
 
 class ParentVC : UIViewController {
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
 }
