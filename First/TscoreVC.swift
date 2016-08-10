@@ -18,7 +18,6 @@ class TscoreVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var newvariable = 0
         scoreData = NSUserDefaults.standardUserDefaults().integerForKey("ParentScore")
         
         Score.text = String("\(scoreData)점")
