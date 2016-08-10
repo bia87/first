@@ -15,8 +15,7 @@ class ParentVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var testgithub = "testgithub"
-        
+                
     }
     
 }
