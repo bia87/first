@@ -8,11 +8,31 @@
 
 import UIKit
 
+var UserName = String()
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.barStyle = UIBarStyle.Default
+        nav?.backgroundColor = UIColor.whiteColor()
+
+        nav?.tintColor = UIColor.blackColor()
+//        이미지 위치와 크기
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+//        이미지 파일 지정
+//        let image = UIImage(named: "이미지 파일이름")
+//        imageView.image = image
+//        네비게이션바에 이미지 부착
+//        navigationItem.titleView = imageView
+//        
+//        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +40,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func startButton(sender: AnyObject) {
+        
+    }
 
 }
 
