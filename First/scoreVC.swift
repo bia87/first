@@ -6,8 +6,9 @@
 //  Copyright © 2016년 Kim Eunyoung. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
+
 class scoreVC: UIViewController {
 
     @IBOutlet var SViewer: UILabel!

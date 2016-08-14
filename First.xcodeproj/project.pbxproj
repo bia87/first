@@ -180,9 +180,9 @@
 		EA8FD2CF1D530FBC00D6E26C /* First */ = {
 			isa = PBXGroup;
 			children = (
+				EA8FD2D41D530FBC00D6E26C /* Main.storyboard */,
 				EA8FD2D01D530FBC00D6E26C /* AppDelegate.swift */,
 				EA8FD2D21D530FBC00D6E26C /* ViewController.swift */,
-				EA8FD2D41D530FBC00D6E26C /* Main.storyboard */,
 				EA924D461D5B11D600E32263 /* TscoreVC.swift */,
 				EA3EC3A71D55E1A600488039 /* TeacherVC.swift */,
 				EA3EC3A91D55E1DC00488039 /* ParentVC.swift */,
@@ -431,6 +431,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Key.First;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Key.First;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -6,7 +6,7 @@
 //  Copyright © 2016년 Kim Eunyoung. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 class IntroVC : UIViewController {
@@ -21,8 +21,6 @@ class IntroVC : UIViewController {
     
     
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+
+
 }

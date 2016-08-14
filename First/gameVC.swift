@@ -6,7 +6,7 @@
 //  Copyright © 2016년 Kim Eunyoung. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 struct Question {
@@ -26,12 +26,7 @@ class gameVC: UIViewController {
     var QNumber = Int()
     var AnswerNumber = Int()
     var Score : Int = 0
-    
-    
-    var Wrong = UIAlertController(title: "아니야~", message: "좀 더 생각해보세요" , preferredStyle: .Alert)
-    var UnderButton = UIAlertAction(title: "다시 한번 도전!", style: .Destructive , handler: nil)
-    
-    
+
     override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -47,7 +42,6 @@ class gameVC: UIViewController {
         
         
         
-        Wrong.addAction(UnderButton)
         self.NextButton.alpha = 0.0
         
         PickQuestion()
@@ -86,43 +80,30 @@ class gameVC: UIViewController {
     @IBAction func bt1(sender: AnyObject) {
         if AnswerNumber == 0 {
             Score += 20
-            PickQuestion()
         }
-        else {
-//            self.presentViewController(Wrong, animated: true, completion: nil)
-            PickQuestion()
-
-        }
+        PickQuestion()
     }
     @IBAction func btn2(sender: AnyObject) {
         if AnswerNumber == 1 {
             Score += 20
-            PickQuestion()
         }
-        else {
-//            self.presentViewController(Wrong, animated: true, completion: nil)
         PickQuestion()
-        }
+        
     }
     @IBAction func bt3(sender: AnyObject) {
         if AnswerNumber == 2 {
             Score += 20
-            PickQuestion()
         }
-        else {
-//            self.presentViewController(Wrong, animated: true, completion: nil)
+
+
         PickQuestion()
-        }
+        
     }
     @IBAction func btn4(sender: AnyObject) {
         if AnswerNumber == 3 {
             Score += 20
-            PickQuestion()
         }
-        else {
-//            self.presentViewController(Wrong, animated: true, completion: nil)
         PickQuestion()
-        }
         
     }
     
