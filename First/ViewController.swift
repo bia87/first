@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func unwindToHome(segue: UIStoryboardSegue){
+        self.view.backgroundColor = UIColor.blackColor()
+    }
+    
 
 }
 

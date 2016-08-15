@@ -9,6 +9,7 @@
 
 import UIKit
 
+
 struct TQuestion {
     var Question = String()
     var Answer = Int()
@@ -18,6 +19,8 @@ class TeacherVC : UIViewController {
     
     @IBOutlet var QLabel: UILabel!
     @IBOutlet var NextBT: UIButton!
+    @IBOutlet weak var yesBtn: UIButton!
+    @IBOutlet weak var noBtn: UIButton!
     
     var Questions = [TQuestion]()
     var QNumber = Int()
@@ -60,12 +63,17 @@ class TeacherVC : UIViewController {
         }
             
         else {
-          self.NextBT.alpha = 1.0
+            self.yesBtn.alpha = 0.0
+            self.noBtn.alpha = 0.0
+            self.NextBT.alpha = 1.0
         }
     }
     
+    
     @IBAction func YesBT(sender: AnyObject) {
-    PickQuestion()
+
+        PickQuestion()
+        
     }
     
     @IBAction func NoBT(sender: AnyObject) {
